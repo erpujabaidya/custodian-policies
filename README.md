@@ -59,32 +59,42 @@ Use Cases:
 
 10.Cloud trail logging enabled (check cloudtrailenabled.yml)
 
-11.
+11.Delete old snapshot that exceeds particular days (check delete-old-snapshot.yml)
 
-12.
+12.Delete resources without tags (check deleteresources-without-tags.yml)
 
-13.
+13.Find resources without tags (check findresources-withouttags.yml)
 
-14.
+14.Deregister old ami (check deregister-old-ami.yml)
 
-15.
+15.Some use cases for ebs policies (check ebs-policies.yml)
 
-16.
+16.IAM users doesn’t exist in groups (check empty-iam-group.yml)
 
-17.
+17.Find idle instances (check findidleinstance.yml)
 
-18.
+18.IAM user inactivity exceeds 10 days (check  iam-inactivity.yml)
 
-19.
+19.Users with MFA disabled (check mfa-disabled.yml)
 
-20.
+20.Modify CPU utilization (check modifycpuutilization.yml)
 
-21.
+21.Old Instance generation  (check old-instances.yml)
 
-22.
+22.RDS public access (check rds-public-access.yml)
 
-23.
+23.S3 public access off (check  s3-publicaccessoff.yml  )
 
-24.
+24.Block S3 public access(check s3-public-blockpolicy.yml)
 
-25.
+25.Scheduled Resource scheduling (check schedulingresources.yml)
+
+26.Unrestricted SG (check unrestrictedSG.yml)
+
+27.Unused EC2 key pair (check unusedec2-keypair.yml)
+
+28.Unused ELB (check unused-ebl.yml)
+
+29.Creates a Weekly Cron Scheduled CWEvent to Snapshot single non-cluster RDS Instances weekly if tagged (check weeklysnapshot-rds.yml )
+
+30.
