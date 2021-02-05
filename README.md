@@ -31,9 +31,11 @@ Cloud Custodian policies are expressed in YAML and include the following:
 2.Filters to narrow down the set of resources
 
 3.Actions to take on the filtered set of resources
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Here AWS Cloud custodian package is installed
 or, visit https://aws.amazon.com/blogs/opensource/compliance-as-code-and-auto-remediation-with-cloud-custodian/
+
 Install Custodian in the aws cloud9 environment
 1. python3 -m venv custodian
 2. source custodian/bin/activate
@@ -41,10 +43,13 @@ Install Custodian in the aws cloud9 environment
 4. custodian validate <yml_file> # We must validate Cloud Custodian policies against the JSON schema before processing
 5. custodian run --dryrun <yml_file> -s out # Performming a dry-run command before running the command on infrastructure is usually preferred.
 6. custodian run <yml_file> -s out # we use the report subcommand to summarize 
-7. custodian report <yml_file> -s out --format grid # Everything looks as expected, so now we are going to run the policies:
+7. custodian report <yml_file> -s out --format grid # Everything looks as expected, so now we are going to run the policies
 
-Here i have run some use cases for cloud custodian
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Use Cases:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1.Find all running EC2 instances that are using invalid AMIs and stop them  (check custodian_polices.yml)
 
 2.Filter any security group that allows 0.0.0.0/0 or ::/0 (IPv6) ingress on port 22, remove the rule (check custodian_polices.yml)
@@ -102,5 +107,17 @@ Use Cases:
 28.Unused ELB (check unused-ebl.yml)
 
 29.Creates a Weekly Cron Scheduled CWEvent to Snapshot single non-cluster RDS Instances weekly if tagged (check weeklysnapshot-rds.yml )
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+One more interesting way to do is
+Click on the AWS Security Hub --> Integrations --> Cloud Custodian --> Accept All findings --> It will find all the violated rules --> We can remediate also from the AWS console only.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
