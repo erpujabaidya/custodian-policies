@@ -1,21 +1,28 @@
 {
   "policy": {
-    "name": "ec2-30-days-plus",
-    "resource": "ec2",
+    "name": "account-service-limits",
+    "resource": "account",
     "filters": [
       {
-        "type": "instance-age",
-        "op": "ge",
-        "days": 30
+        "type": "service-limit",
+        "services": [
+          "EC2"
+        ],
+        "limits": [
+          "On-Demand instances - c5.large",
+          "On-Demand instances - m5.large",
+          "On-Demand instances - m5.xlarge"
+        ],
+        "threshold": 80
       }
     ]
   },
   "version": "0.9.10",
   "execution": {
-    "id": "7a38316d-80ae-449e-a069-5dfba9af180b",
-    "start": 1612509159.9359193,
-    "end_time": 1612509160.4933488,
-    "duration": 0.5574295520782471
+    "id": "ca9a8c3b-f39a-4fe7-b284-79786f2ca3d3",
+    "start": 1612512361.2940874,
+    "end_time": 1612512361.7053218,
+    "duration": 0.41123437881469727
   },
   "config": {
     "region": "us-east-2",
@@ -33,12 +40,12 @@
     "metrics": null,
     "output_dir": "out",
     "cache_period": 15,
-    "dryrun": false,
+    "dryrun": true,
     "authorization_file": null,
     "subparser": "run",
     "config": null,
     "configs": [
-      "old-instances.yml"
+      "servicelimitt.yml"
     ],
     "policy_filters": [],
     "resource_types": [],
@@ -51,26 +58,15 @@
   },
   "sys-stats": {},
   "api-stats": {
-    "ec2.DescribeInstances": 1
+    "iam.ListAccountAliases": 1,
+    "support.DescribeTrustedAdvisorChecks": 1
   },
   "metrics": [
     {
-      "MetricName": "ResourceCount",
-      "Timestamp": "2021-02-05T07:12:40.486078",
-      "Value": 26,
+      "MetricName": "PolicyException",
+      "Timestamp": "2021-02-05T08:06:01.705295",
+      "Value": 1,
       "Unit": "Count"
-    },
-    {
-      "MetricName": "ResourceTime",
-      "Timestamp": "2021-02-05T07:12:40.486105",
-      "Value": 0.522634744644165,
-      "Unit": "Seconds"
-    },
-    {
-      "MetricName": "ActionTime",
-      "Timestamp": "2021-02-05T07:12:40.493331",
-      "Value": 4.5299530029296875e-06,
-      "Unit": "Seconds"
     }
   ]
 }

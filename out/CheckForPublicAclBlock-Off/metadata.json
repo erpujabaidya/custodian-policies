@@ -1,21 +1,22 @@
 {
   "policy": {
-    "name": "ec2-30-days-plus",
-    "resource": "ec2",
+    "name": "CheckForPublicAclBlock-Off",
+    "resource": "s3",
+    "region": "us-east-2",
     "filters": [
       {
-        "type": "instance-age",
-        "op": "ge",
-        "days": 30
+        "type": "check-public-block",
+        "BlockPublicAcls": true,
+        "BlockPublicPolicy": true
       }
     ]
   },
   "version": "0.9.10",
   "execution": {
-    "id": "7a38316d-80ae-449e-a069-5dfba9af180b",
-    "start": 1612509159.9359193,
-    "end_time": 1612509160.4933488,
-    "duration": 0.5574295520782471
+    "id": "8b888af9-27df-41ae-ac7e-1bf78b649fb4",
+    "start": 1612512795.7250338,
+    "end_time": 1612512807.168778,
+    "duration": 11.44374418258667
   },
   "config": {
     "region": "us-east-2",
@@ -33,12 +34,12 @@
     "metrics": null,
     "output_dir": "out",
     "cache_period": 15,
-    "dryrun": false,
+    "dryrun": true,
     "authorization_file": null,
     "subparser": "run",
     "config": null,
     "configs": [
-      "old-instances.yml"
+      "s3-publicaccessoff.yml"
     ],
     "policy_filters": [],
     "resource_types": [],
@@ -51,25 +52,30 @@
   },
   "sys-stats": {},
   "api-stats": {
-    "ec2.DescribeInstances": 1
+    "s3.ListBuckets": 1,
+    "s3.GetBucketLocation": 51,
+    "s3.GetBucketTagging": 51,
+    "s3.GetBucketPolicy": 51,
+    "s3.GetBucketAcl": 51,
+    "s3.GetBucketReplication": 51,
+    "s3.GetBucketVersioning": 51,
+    "s3.GetBucketWebsite": 51,
+    "s3.GetBucketLogging": 51,
+    "s3.GetBucketNotificationConfiguration": 51,
+    "s3.GetBucketLifecycleConfiguration": 51,
+    "s3.GetPublicAccessBlock": 51
   },
   "metrics": [
     {
       "MetricName": "ResourceCount",
-      "Timestamp": "2021-02-05T07:12:40.486078",
-      "Value": 26,
+      "Timestamp": "2021-02-05T08:13:27.167186",
+      "Value": 13,
       "Unit": "Count"
     },
     {
       "MetricName": "ResourceTime",
-      "Timestamp": "2021-02-05T07:12:40.486105",
-      "Value": 0.522634744644165,
-      "Unit": "Seconds"
-    },
-    {
-      "MetricName": "ActionTime",
-      "Timestamp": "2021-02-05T07:12:40.493331",
-      "Value": 4.5299530029296875e-06,
+      "Timestamp": "2021-02-05T08:13:27.167206",
+      "Value": 11.426940202713013,
       "Unit": "Seconds"
     }
   ]

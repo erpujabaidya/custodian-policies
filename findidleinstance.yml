@@ -1,0 +1,22 @@
+policies:
+  - name: ec2-stop
+    resource: ec2
+    description: EC2 instances that are idle will be stopped.
+    filters:
+       - type: metrics
+         name: CPUUtilization
+         percent: 2
+         op: lt
+         days: 7
+      - type: metrics
+name: NetworkIn
+value: 5000
+op: lt
+        days: 7
+      - type: metrics
+name: NetworkOut
+        value: 5000
+        op: lt
+        days: 7
+     actions:
+       - stop

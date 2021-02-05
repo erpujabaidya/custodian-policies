@@ -1,0 +1,12 @@
+policies:
+  - name: account-service-limits
+    resource: account
+    filters:
+      - type: service-limit
+        services:
+          - EC2
+        limits:
+          - On-Demand instances - c5.large
+          - On-Demand instances - m5.large
+          - On-Demand instances - m5.xlarge
+        threshold: 80

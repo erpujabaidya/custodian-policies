@@ -1,0 +1,601 @@
+[
+  {
+    "Name": "aes-siem-364604277807-geo",
+    "CreationDate": "2021-02-04T11:35:29+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "name",
+        "Value": "ElasticSIEM"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "aes-siem"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "S3BucketForGeoip04B5F171"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:364604277807:stack/aes-siem/750ddf50-66d6-11eb-9707-0eaa1a5b8293"
+      }
+    ],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"Allow geoip downloader and es-loader to read/write\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[\"arn:aws:iam::364604277807:role/aes-siem-LambdaGeoipDownloaderServiceRoleE37FB908-KFQX08U7OL3\",\"arn:aws:iam::364604277807:role/aes-siem-LambdaEsLoaderServiceRoleFFD43869-10DFYFS98ID4V\"]},\"Action\":[\"s3:PutObject\",\"s3:GetObject\",\"s3:DeleteObject\"],\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-geo/*\"}]}",
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "aes-siem-364604277807-log",
+    "CreationDate": "2021-02-04T14:38:22+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "name",
+        "Value": "ElasticSIEM"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "aes-siem"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "S3BucketForLog20898FE4"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:364604277807:stack/aes-siem/750ddf50-66d6-11eb-9707-0eaa1a5b8293"
+      }
+    ],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"ELB Policy\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::127311923021:root\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log/AWSLogs/364604277807/*\"},{\"Sid\":\"AWSLogDeliveryAclCheck For ALB NLB R53Resolver Flowlogs\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"delivery.logs.amazonaws.com\"},\"Action\":[\"s3:GetBucketAcl\",\"s3:ListBucket\"],\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log\"},{\"Sid\":\"AWSLogDeliveryWrite For ALB NLB R53Resolver Flowlogs\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"delivery.logs.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log/AWSLogs/364604277807/*\",\"Condition\":{\"StringEquals\":{\"s3:x-amz-acl\":\"bucket-owner-full-control\"}}},{\"Sid\":\"AWSLogDeliveryAclCheck For Cloudtrail\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Action\":\"s3:GetBucketAcl\",\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log\"},{\"Sid\":\"AWSLogDeliveryWrite For CloudTrail\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log/AWSLogs/364604277807/*\",\"Condition\":{\"StringEquals\":{\"s3:x-amz-acl\":\"bucket-owner-full-control\"}}},{\"Sid\":\"Allow GuardDuty to use the getBucketLocation operation\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"guardduty.amazonaws.com\"},\"Action\":\"s3:GetBucketLocation\",\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log\"},{\"Sid\":\"Allow GuardDuty to upload objects to the bucket\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"guardduty.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log/*\"},{\"Sid\":\"Deny non-HTTPS access\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:*\",\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log/*\",\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}}},{\"Sid\":\"AWSConfig BucketPermissionsCheck and BucketExistenceCheck\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"config.amazonaws.com\"},\"Action\":[\"s3:GetBucketAcl\",\"s3:ListBucket\"],\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log\"},{\"Sid\":\"AWSConfigBucketDelivery\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"config.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-log/AWSLogs/364604277807/Config/*\",\"Condition\":{\"StringEquals\":{\"s3:x-amz-acl\":\"bucket-owner-full-control\"}}}]}",
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {
+      "Status": "Enabled"
+    },
+    "Website": null,
+    "Logging": {},
+    "Notification": {
+      "LambdaFunctionConfigurations": [
+        {
+          "Id": "MjAyNjQwZGQtZDc0OC00MDQ4LThjNjItNWNhOTQ5ODBlOTNj",
+          "LambdaFunctionArn": "arn:aws:lambda:us-east-1:364604277807:function:aes-siem-es-loader",
+          "Events": [
+            "s3:ObjectCreated:*"
+          ],
+          "Filter": {
+            "Key": {
+              "FilterRules": [
+                {
+                  "Name": "Prefix",
+                  "Value": "AWSLogs/"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Id": "ZDdkNjI2OWQtOTAzMS00NTkxLTk5ZGQtOTE0MTdlYjg4ZWM2",
+          "LambdaFunctionArn": "arn:aws:lambda:us-east-1:364604277807:function:aes-siem-es-loader",
+          "Events": [
+            "s3:ObjectCreated:*"
+          ],
+          "Filter": {
+            "Key": {
+              "FilterRules": [
+                {
+                  "Name": "Prefix",
+                  "Value": "UserLogs/"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "aes-siem-364604277807-snapshot",
+    "CreationDate": "2021-02-04T11:36:08+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "name",
+        "Value": "ElasticSIEM"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "aes-siem"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "S3BucketForSnapshot40E67D36"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:364604277807:stack/aes-siem/750ddf50-66d6-11eb-9707-0eaa1a5b8293"
+      }
+    ],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"Allow ES to store snapshot\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::364604277807:role/aes-siem-snapshot-role\"},\"Action\":[\"s3:PutObject\",\"s3:GetObject\",\"s3:DeleteObject\"],\"Resource\":\"arn:aws:s3:::aes-siem-364604277807-snapshot/*\"}]}",
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "auditbucketeu",
+    "CreationDate": "2021-02-03T16:52:28+00:00",
+    "Location": {
+      "LocationConstraint": "eu-central-1"
+    },
+    "Tags": [],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AWSCloudTrailAclCheck20150319\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Action\":\"s3:GetBucketAcl\",\"Resource\":\"arn:aws:s3:::auditbucketeu\"},{\"Sid\":\"AWSCloudTrailWrite20150319\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::auditbucketeu/AWSLogs/364604277807/*\",\"Condition\":{\"StringEquals\":{\"s3:x-amz-acl\":\"bucket-owner-full-control\"}}}]}",
+    "Acl": {
+      "Owner": {
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "cdktoolkit-stagingbucket-or72hqtzdw1p",
+    "CreationDate": "2021-01-21T07:48:13+00:00",
+    "Location": {
+      "LocationConstraint": "us-west-1"
+    },
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-west-1:364604277807:stack/CDKToolkit/eed926c0-5bbc-11eb-9a04-062709bde2c3"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "CDKToolkit"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "StagingBucket"
+      }
+    ],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"AccessControl\",\"Statement\":[{\"Sid\":\"AllowSSLRequestsOnly\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:*\",\"Resource\":[\"arn:aws:s3:::cdktoolkit-stagingbucket-or72hqtzdw1p\",\"arn:aws:s3:::cdktoolkit-stagingbucket-or72hqtzdw1p/*\"],\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}}}]}",
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "cmsmigrationbucket",
+    "CreationDate": "2020-03-18T14:07:34+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "lookoutvision-us-east-2-199d8b8d9a",
+    "CreationDate": "2020-12-03T09:18:24+00:00",
+    "Location": {
+      "LocationConstraint": "us-east-2"
+    },
+    "Tags": [],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {
+      "Status": "Enabled"
+    },
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": {
+      "Rules": [
+        {
+          "ID": "Root",
+          "Prefix": "",
+          "Status": "Enabled",
+          "NoncurrentVersionExpiration": {
+            "NoncurrentDays": 30
+          },
+          "AbortIncompleteMultipartUpload": {
+            "DaysAfterInitiation": 3
+          }
+        }
+      ]
+    },
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "kops-istio",
+    "CreationDate": "2020-05-03T07:02:58+00:00",
+    "Location": {
+      "LocationConstraint": "us-west-1"
+    },
+    "Tags": [],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "newtestelk",
+    "CreationDate": "2020-08-29T12:15:42+00:00",
+    "Location": {
+      "LocationConstraint": "us-east-2"
+    },
+    "Tags": [],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "sagemakerrj",
+    "CreationDate": "2020-12-30T07:28:59+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "testmlstore",
+    "CreationDate": "2019-09-24T08:56:28+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AmazonML_s3:ListBucket\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"machinelearning.amazonaws.com\"},\"Action\":\"s3:ListBucket\",\"Resource\":\"arn:aws:s3:::testmlstore\",\"Condition\":{\"StringLike\":{\"s3:prefix\":[\"UserDevicePersona-Good.xlsx*\",\"UserDevicePersona-Good_RJ,odified.xlsx*\",\"UserDevicePersona-Good_RJ_modified.csv*\",\"NH_Data.csv*\"]}}},{\"Sid\":\"AmazonML_s3:GetObject\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"machinelearning.amazonaws.com\"},\"Action\":\"s3:GetObject\",\"Resource\":[\"arn:aws:s3:::testmlstore/UserDevicePersona-Good.xlsx*\",\"arn:aws:s3:::testmlstore/UserDevicePersona-Good_RJ,odified.xlsx*\",\"arn:aws:s3:::testmlstore/UserDevicePersona-Good_RJ_modified.csv*\",\"arn:aws:s3:::testmlstore/NH_Data.csv*\"]}]}",
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "wkteststorageaz",
+    "CreationDate": "2020-06-18T04:45:49+00:00",
+    "Location": {
+      "LocationConstraint": "us-east-2"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "WK"
+      }
+    ],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {
+      "Status": "Enabled"
+    },
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  {
+    "Name": "wkdemosampleapp",
+    "CreationDate": "2020-06-28T05:02:53+00:00",
+    "Location": {
+      "LocationConstraint": "us-west-2"
+    },
+    "Tags": [],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "rahul.jha",
+        "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "rahul.jha",
+            "ID": "a781b327925eb9e247e8e14781c00c4d55eef6ac8c5a5171c7faf50659e364e3",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:PublicAccessBlock": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  }
+]

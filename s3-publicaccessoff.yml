@@ -1,0 +1,9 @@
+policies:
+  - name: CheckForPublicAclBlock-Off
+    resource: s3
+    region: us-east-2
+    filters:
+      - type: check-public-block
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+
