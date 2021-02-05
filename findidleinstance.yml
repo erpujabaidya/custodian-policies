@@ -21,3 +21,4 @@ name: NetworkOut
         days: 7
      actions:
        - stop
+       
