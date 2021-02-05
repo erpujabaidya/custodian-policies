@@ -20,3 +20,4 @@ policies:
           - type: value
             key: "PublicIpAddress"
             value: not-null
+            
