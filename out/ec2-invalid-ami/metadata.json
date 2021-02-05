@@ -1,0 +1,78 @@
+{
+  "policy": {
+    "name": "ec2-invalid-ami",
+    "resource": "ec2",
+    "description": "Find all running EC2 instances that are using invalid AMIs and stop them\n",
+    "mode": {
+      "type": "periodic",
+      "schedule": "rate(1 day)",
+      "role": "arn:aws:iam::364604277807:role/Custodian-Policy",
+      "tags": {
+        "custodian-info": "mode=periodic:version=0.9.10"
+      }
+    },
+    "filters": [
+      {
+        "State.Name": "running"
+      },
+      {
+        "type": "value",
+        "key": "ImageId",
+        "op": "in",
+        "value": [
+          "ami-02bcbb802e03574ba"
+        ]
+      }
+    ]
+  },
+  "version": "0.9.10",
+  "execution": {
+    "id": "c13dbd6e-88a0-40b0-a003-7d6af86033ab",
+    "start": 1612506727.5646312,
+    "end_time": 1612506728.4230313,
+    "duration": 0.8584001064300537
+  },
+  "config": {
+    "region": "us-east-2",
+    "regions": [
+      "us-east-2"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "364604277807",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "custodian_polices.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "lambda.GetFunction": 1,
+    "lambda.CreateFunction": 1,
+    "events.DescribeRule": 1,
+    "events.PutRule": 1,
+    "lambda.AddPermission": 1,
+    "events.ListTargetsByRule": 1,
+    "events.PutTargets": 1
+  },
+  "metrics": []
+}

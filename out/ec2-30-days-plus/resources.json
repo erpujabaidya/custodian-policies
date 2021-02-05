@@ -1,0 +1,3381 @@
+[
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-056f139b85f494248",
+    "InstanceId": "i-0bf13bcfc614d1981",
+    "InstanceType": "t2.xlarge",
+    "KeyName": "nlp",
+    "LaunchTime": "2020-12-28T07:41:00+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "Platform": "windows",
+    "PrivateDnsName": "ip-172-31-1-194.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.31.1.194",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-3-138-33-93.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "3.138.33.93",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-060b4b6e",
+    "VpcId": "vpc-5e742736",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2020-11-30T07:37:04+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-07ce06ff508e82213"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "amazon",
+          "PublicDnsName": "ec2-3-138-33-93.us-east-2.compute.amazonaws.com",
+          "PublicIp": "3.138.33.93"
+        },
+        "Attachment": {
+          "AttachTime": "2020-11-30T07:37:03+00:00",
+          "AttachmentId": "eni-attach-0e79e320c71b656b3",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "launch-wizard-10",
+            "GroupId": "sg-0605c1d55464a7ff7"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:fe:4c:b0:a4:88",
+        "NetworkInterfaceId": "eni-072fb6e6174b25ffa",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-31-1-194.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.1.194",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "amazon",
+              "PublicDnsName": "ec2-3-138-33-93.us-east-2.compute.amazonaws.com",
+              "PublicIp": "3.138.33.93"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-1-194.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.1.194"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-060b4b6e",
+        "VpcId": "vpc-5e742736",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "launch-wizard-10",
+        "GroupId": "sg-0605c1d55464a7ff7"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "nlp"
+      },
+      {
+        "Key": "app",
+        "Value": "nlp"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 4,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-0860285e3eeb23175",
+    "InstanceId": "i-0a9847a75b78d46a6",
+    "InstanceType": "t2.micro",
+    "KeyName": "rjwindows",
+    "LaunchTime": "2020-08-31T11:33:23+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "Platform": "windows",
+    "PrivateDnsName": "ip-172-31-19-87.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.31.19.87",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-12-28 07:42:42 GMT)",
+    "SubnetId": "subnet-b042fcca",
+    "VpcId": "vpc-5e742736",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2020-08-31T11:33:24+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-05bcac70bd962b0d5"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2020-08-31T11:33:23+00:00",
+          "AttachmentId": "eni-attach-0d196bd3b5acda4d2",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "launch-wizard-9",
+            "GroupId": "sg-06d7647a90b3fd9b3"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:05:76:84:ae:7c",
+        "NetworkInterfaceId": "eni-000470f61f139c0aa",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-31-19-87.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.19.87",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-19-87.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.19.87"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-b042fcca",
+        "VpcId": "vpc-5e742736",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "launch-wizard-9",
+        "GroupId": "sg-06d7647a90b3fd9b3"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "elasticwindowsfree"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-08e42b8293869c6ce",
+    "InstanceId": "i-0655ff54cef7a853d",
+    "InstanceType": "t2.micro",
+    "KeyName": "kubernetes.kopsistio.in-7a:70:86:34:84:f4:88:d6:1b:61:d3:fe:f3:51:cb:91",
+    "LaunchTime": "2020-05-02T17:16:00+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-172-20-41-136.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.20.41.136",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-18-224-66-168.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "18.224.66.168",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-085836b135142499e",
+    "VpcId": "vpc-008fabb1b23b1822d",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "2020-05-02T17:16:01+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-06208c3df0ff580bc"
+        }
+      }
+    ],
+    "ClientToken": "ae75c759-8cde-a283-2285-f0a4025c1a8a",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::364604277807:instance-profile/masters.kopsistio.in",
+      "Id": "AIPAVJZA3YQXYJ5LZEZ27"
+    },
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "amazon",
+          "PublicDnsName": "ec2-18-224-66-168.us-east-2.compute.amazonaws.com",
+          "PublicIp": "18.224.66.168"
+        },
+        "Attachment": {
+          "AttachTime": "2020-05-02T17:16:00+00:00",
+          "AttachmentId": "eni-attach-08589844099b388ab",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "masters.kopsistio.in",
+            "GroupId": "sg-01246f642f431661f"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:05:55:9d:74:da",
+        "NetworkInterfaceId": "eni-0437b26297ce0e5af",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-20-41-136.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.20.41.136",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "amazon",
+              "PublicDnsName": "ec2-18-224-66-168.us-east-2.compute.amazonaws.com",
+              "PublicIp": "18.224.66.168"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-20-41-136.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.20.41.136"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-085836b135142499e",
+        "VpcId": "vpc-008fabb1b23b1822d",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "masters.kopsistio.in",
+        "GroupId": "sg-01246f642f431661f"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "k8s.io/role/master",
+        "Value": "1"
+      },
+      {
+        "Key": "Name",
+        "Value": "master-us-east-2a.masters.kopsistio.in"
+      },
+      {
+        "Key": "k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup",
+        "Value": "master-us-east-2a"
+      },
+      {
+        "Key": "kops.k8s.io/instancegroup",
+        "Value": "master-us-east-2a"
+      },
+      {
+        "Key": "KubernetesCluster",
+        "Value": "kopsistio.in"
+      },
+      {
+        "Key": "aws:autoscaling:groupName",
+        "Value": "master-us-east-2a.masters.kopsistio.in"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-03291866",
+    "InstanceId": "i-08f7507070e93b9e5",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-0-197.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.0.197",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:38:31 GMT)",
+    "SubnetId": "subnet-091726db47ef59662",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T13:38:06+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-01d6d19f0c7d8b9b8"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T13:38:06+00:00",
+          "AttachmentId": "eni-attach-0dc2c9f0af20a8cdd",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:ff:13:f2:5e:ec",
+        "NetworkInterfaceId": "eni-07b9ed96f4e55dd2d",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-0-197.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.0.197",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-0-197.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.0.197"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-091726db47ef59662",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "TEST-WEB-LNX-02"
+      },
+      {
+        "Key": "WK",
+        "Value": "TEST-WEB-LNX-02"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-0b85de74bd655092d",
+    "InstanceId": "i-0d6ab8afc96c6cc9b",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-0-68.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.0.68",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-3-18-129-199.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "3.18.129.199",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:43:24 GMT)",
+    "SubnetId": "subnet-0c6795227bb03d787",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-12T14:26:55+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0ff52780e367d1bc0"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "364604277807",
+          "PublicDnsName": "ec2-3-18-129-199.us-east-2.compute.amazonaws.com",
+          "PublicIp": "3.18.129.199"
+        },
+        "Attachment": {
+          "AttachTime": "2019-03-12T14:26:55+00:00",
+          "AttachmentId": "eni-attach-04720c22a79d7db29",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:f2:eb:c4:71:0c",
+        "NetworkInterfaceId": "eni-02ef554827fe29a53",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-0-68.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.0.68",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "364604277807",
+              "PublicDnsName": "ec2-3-18-129-199.us-east-2.compute.amazonaws.com",
+              "PublicIp": "3.18.129.199"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-0-68.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.0.68"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0c6795227bb03d787",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "TEST-SQUID-LNX-02"
+      },
+      {
+        "Key": "WK",
+        "Value": "TEST-SQUID-LNX-02"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-08b4a0f6e106c1dba",
+    "InstanceId": "i-0c0628c83b73e65cb",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "Platform": "windows",
+    "PrivateDnsName": "ip-10-254-1-90.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.1.90",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:41:05 GMT)",
+    "SubnetId": "subnet-0b48ed66d79a47484",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T13:40:49+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-086ad480cb081be89"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T13:40:48+00:00",
+          "AttachmentId": "eni-attach-07c2270414f86ca77",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:05:fc:55:40:c0",
+        "NetworkInterfaceId": "eni-05e9613a3c661356d",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-1-90.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.1.90",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-1-90.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.1.90"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0b48ed66d79a47484",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "TEST-APP-WIN-02"
+      },
+      {
+        "Key": "Name",
+        "Value": "TEST-APP-WIN-02"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-015fe7c969aa126ca",
+    "InstanceId": "i-0e446a9d1fdc54dbc",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-1-224.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.1.224",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:44:23 GMT)",
+    "SubnetId": "subnet-0be8447a05aa9edc2",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-13T09:07:19+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-00610ac840b770e65"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-13T09:07:19+00:00",
+          "AttachmentId": "eni-attach-0a050f95d2406d8d6",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:15:70:c2:5d:76",
+        "NetworkInterfaceId": "eni-09b1fe7f10a84e236",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-1-224.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.1.224",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-1-224.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.1.224"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0be8447a05aa9edc2",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "TEST-DB-LNX-02"
+      },
+      {
+        "Key": "Name",
+        "Value": "TEST-DB-LNX-02"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-0f4aeaec5b3ce9152",
+    "InstanceId": "i-05a51ec94c9820c29",
+    "InstanceType": "t2.micro",
+    "KeyName": "rjsysdig",
+    "LaunchTime": "2020-08-27T13:57:08+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-172-31-16-250.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.31.16.250",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-3-23-94-29.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "3.23.94.29",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-b042fcca",
+    "VpcId": "vpc-5e742736",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "2020-08-27T05:13:59+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-05875bf939c7500e1"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "amazon",
+          "PublicDnsName": "ec2-3-23-94-29.us-east-2.compute.amazonaws.com",
+          "PublicIp": "3.23.94.29"
+        },
+        "Attachment": {
+          "AttachTime": "2020-08-27T05:13:58+00:00",
+          "AttachmentId": "eni-attach-01f0b6934bc483ffc",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "launch-wizard-7",
+            "GroupId": "sg-05bb3fa8542601cd1"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:27:f4:25:19:f0",
+        "NetworkInterfaceId": "eni-0263d4fa0b077efab",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-31-16-250.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.16.250",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "amazon",
+              "PublicDnsName": "ec2-3-23-94-29.us-east-2.compute.amazonaws.com",
+              "PublicIp": "3.23.94.29"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-16-250.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.16.250"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-b042fcca",
+        "VpcId": "vpc-5e742736",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "launch-wizard-7",
+        "GroupId": "sg-05bb3fa8542601cd1"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "elastic3"
+      },
+      {
+        "Key": "name",
+        "Value": "elastic7.9"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-08b4a0f6e106c1dba",
+    "InstanceId": "i-0b1c25566b899c3e1",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "Platform": "windows",
+    "PrivateDnsName": "ip-10-254-0-246.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.0.246",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:37:30 GMT)",
+    "SubnetId": "subnet-091726db47ef59662",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T13:33:53+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-01626a6f6a23e4019"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T13:33:52+00:00",
+          "AttachmentId": "eni-attach-024b7d7fa2d923e85",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:18:f1:7b:c0:be",
+        "NetworkInterfaceId": "eni-0c4c7b2bfb021817c",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-0-246.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.0.246",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-0-246.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.0.246"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-091726db47ef59662",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "TEST-WEB-WIN-02"
+      },
+      {
+        "Key": "Name",
+        "Value": "TEST-WEB-WIN-02"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-01cd81c20eec5632f",
+    "InstanceId": "i-0b60a15724deb4ec8",
+    "InstanceType": "t2.2xlarge",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-05-20T13:22:02+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "Platform": "windows",
+    "PrivateDnsName": "ip-10-254-4-189.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.4.189",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "PublicIpAddress": "13.59.117.181",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 13:08:48 GMT)",
+    "SubnetId": "subnet-0bb7357728a860347",
+    "VpcId": "vpc-062d5f484661d1f99",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2020-05-20T13:22:02+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0eaac57b1e4fb06a0"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "364604277807",
+          "PublicDnsName": "",
+          "PublicIp": "13.59.117.181"
+        },
+        "Attachment": {
+          "AttachTime": "2020-05-20T13:22:02+00:00",
+          "AttachmentId": "eni-attach-02c8e90b2db7d7aca",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "WK-MGMT-BASTION-SG-1",
+            "GroupId": "sg-06b692c29f0d4da56"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:be:19:cf:3b:a6",
+        "NetworkInterfaceId": "eni-03ee18a8aedc0cf3e",
+        "OwnerId": "364604277807",
+        "PrivateIpAddress": "10.254.4.189",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "364604277807",
+              "PublicDnsName": "",
+              "PublicIp": "13.59.117.181"
+            },
+            "Primary": true,
+            "PrivateIpAddress": "10.254.4.189"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0bb7357728a860347",
+        "VpcId": "vpc-062d5f484661d1f99",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "WK-MGMT-BASTION-SG-1",
+        "GroupId": "sg-06b692c29f0d4da56"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "MGMT-BASTION-WIN"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 8,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-0b500ef59d8335eee",
+    "InstanceId": "i-0a9630e87e15ecd6b",
+    "InstanceType": "c5.2xlarge",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-4-21.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.4.21",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 13:07:30 GMT)",
+    "SubnetId": "subnet-0e3b47eafcf87b999",
+    "VpcId": "vpc-062d5f484661d1f99",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-05T13:26:34+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0674f01b61cebab38"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": true,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-05T13:26:34+00:00",
+          "AttachmentId": "eni-attach-011739796eb3f592b",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "WK-MGMT-MWATCH-SG-1",
+            "GroupId": "sg-08d37110f6f2a8c4f"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:1e:a0:14:bd:62",
+        "NetworkInterfaceId": "eni-0a50d0a87f2023ffc",
+        "OwnerId": "364604277807",
+        "PrivateIpAddress": "10.254.4.21",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateIpAddress": "10.254.4.21"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0e3b47eafcf87b999",
+        "VpcId": "vpc-062d5f484661d1f99",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "WK-MGMT-MWATCH-SG-1",
+        "GroupId": "sg-08d37110f6f2a8c4f"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "MGMT-MWATCH-02"
+      },
+      {
+        "Key": "Name",
+        "Value": "MGMT-MWATCH-02"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 4,
+      "ThreadsPerCore": 2
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 1,
+    "ImageId": "ami-0b500ef59d8335eee",
+    "InstanceId": "i-05184d900fe533e47",
+    "InstanceType": "c5.2xlarge",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-09-07T15:13:40+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-4-6.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.4.6",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 13:05:23 GMT)",
+    "SubnetId": "subnet-0e3b47eafcf87b999",
+    "VpcId": "vpc-062d5f484661d1f99",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-05T13:26:34+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0cea034df402dbcf7"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": true,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-05T13:26:34+00:00",
+          "AttachmentId": "eni-attach-0dc188c9d8c471ed8",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "WK-MGMT-MWATCH-SG-1",
+            "GroupId": "sg-08d37110f6f2a8c4f"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:77:15:c9:0a:be",
+        "NetworkInterfaceId": "eni-0c9c481cfd8bdf78a",
+        "OwnerId": "364604277807",
+        "PrivateIpAddress": "10.254.4.6",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateIpAddress": "10.254.4.6"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0e3b47eafcf87b999",
+        "VpcId": "vpc-062d5f484661d1f99",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "WK-MGMT-MWATCH-SG-1",
+        "GroupId": "sg-08d37110f6f2a8c4f"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "MGMT-MWATCH-01"
+      },
+      {
+        "Key": "Name",
+        "Value": "MGMT-MWATCH-01"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 4,
+      "ThreadsPerCore": 2
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-03291866",
+    "InstanceId": "i-02801672867749952",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-1-87.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.1.87",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:42:17 GMT)",
+    "SubnetId": "subnet-0b48ed66d79a47484",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T13:43:01+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0f2cd4905c4447d27"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T13:43:00+00:00",
+          "AttachmentId": "eni-attach-035d3454cac429ee6",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:69:aa:d3:01:62",
+        "NetworkInterfaceId": "eni-094fd0f908bc276ba",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-1-87.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.1.87",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-1-87.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.1.87"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0b48ed66d79a47484",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "TEST-APP-LNX-02"
+      },
+      {
+        "Key": "Name",
+        "Value": "TEST-APP-LNX-02"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-02ccb28830b645a41",
+    "InstanceId": "i-080773a0c76737bf6",
+    "InstanceType": "t2.micro",
+    "KeyName": "corentcontainer",
+    "LaunchTime": "2020-01-23T14:28:47+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-0-214.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.0.214",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-091726db47ef59662",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "2020-01-23T14:28:47+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-05b13f88e222274f8"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2020-01-23T14:28:47+00:00",
+          "AttachmentId": "eni-attach-0879c9f7874b6d939",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "launch-wizard-5",
+            "GroupId": "sg-0cf841bb127ff4553"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:3b:f8:7e:a2:74",
+        "NetworkInterfaceId": "eni-0f4bb7b2813caac72",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-0-214.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.0.214",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-0-214.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.0.214"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-091726db47ef59662",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "launch-wizard-5",
+        "GroupId": "sg-0cf841bb127ff4553"
+      }
+    ],
+    "SourceDestCheck": true,
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-03291866",
+    "InstanceId": "i-0693caf4aa9e223df",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-0-175.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.0.175",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:37:56 GMT)",
+    "SubnetId": "subnet-0b0561f1e47f60d3c",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T13:36:24+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0cb38d37ea00b9950"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T13:36:24+00:00",
+          "AttachmentId": "eni-attach-0d92b4181d2b36a30",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:a9:3d:5d:1c:c0",
+        "NetworkInterfaceId": "eni-044c93a06e729e29d",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-0-175.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.0.175",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-0-175.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.0.175"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0b0561f1e47f60d3c",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "TEST-WEB-LNX-01"
+      },
+      {
+        "Key": "WK",
+        "Value": "TEST-WEB-LNX-01"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-006b2db4ca7e39d7d",
+    "InstanceId": "i-038608b3a6d42be5d",
+    "InstanceType": "t2.micro",
+    "KeyName": "terraformmgmt",
+    "LaunchTime": "2019-09-13T05:28:22+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-172-31-20-16.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.31.20.16",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2019-09-13 13:30:35 GMT)",
+    "SubnetId": "subnet-b042fcca",
+    "VpcId": "vpc-5e742736",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-09-06T07:45:44+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0d55b618368385b8b"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-09-06T07:45:44+00:00",
+          "AttachmentId": "eni-attach-04490e7fc16a4eeae",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "launch-wizard-3",
+            "GroupId": "sg-0c3405d24305a33ce"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:e7:0f:43:4d:7c",
+        "NetworkInterfaceId": "eni-0140007b1a2bbf964",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-31-20-16.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.20.16",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-20-16.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.20.16"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-b042fcca",
+        "VpcId": "vpc-5e742736",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "launch-wizard-3",
+        "GroupId": "sg-0c3405d24305a33ce"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "Terraform-mgmt"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-07c8bc5c1ce9598c3",
+    "InstanceId": "i-052565a37191d121a",
+    "InstanceType": "t2.micro",
+    "KeyName": "rjsysdig",
+    "LaunchTime": "2020-08-27T05:08:31+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-172-31-20-47.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.31.20.47",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-13-58-238-168.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "13.58.238.168",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-b042fcca",
+    "VpcId": "vpc-5e742736",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "2020-08-26T11:56:53+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-01cd855c92da6f6fb"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "amazon",
+          "PublicDnsName": "ec2-13-58-238-168.us-east-2.compute.amazonaws.com",
+          "PublicIp": "13.58.238.168"
+        },
+        "Attachment": {
+          "AttachTime": "2020-08-26T11:56:52+00:00",
+          "AttachmentId": "eni-attach-0c74ef411f3eb1ffa",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "launch-wizard-6",
+            "GroupId": "sg-07d4502f1fdf15327"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:da:3d:4f:8e:44",
+        "NetworkInterfaceId": "eni-0a6ef1c4f96e85221",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-31-20-47.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.20.47",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "amazon",
+              "PublicDnsName": "ec2-13-58-238-168.us-east-2.compute.amazonaws.com",
+              "PublicIp": "13.58.238.168"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-20-47.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.20.47"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-b042fcca",
+        "VpcId": "vpc-5e742736",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "launch-wizard-6",
+        "GroupId": "sg-07d4502f1fdf15327"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "name",
+        "Value": "elasticuse"
+      },
+      {
+        "Key": "Name",
+        "Value": "elasticfree"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-03291866",
+    "InstanceId": "i-0cd46b5f306851df7",
+    "InstanceType": "t2.xlarge",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-4-216.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.4.216",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 13:08:11 GMT)",
+    "SubnetId": "subnet-053f6948dd29ce316",
+    "VpcId": "vpc-062d5f484661d1f99",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T09:45:26+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-09b9964cb26079cc1"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T09:45:25+00:00",
+          "AttachmentId": "eni-attach-087719a5cfbb06ae6",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "WK-MGMT-BASTION-SG-1",
+            "GroupId": "sg-06b692c29f0d4da56"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:5f:20:69:29:f2",
+        "NetworkInterfaceId": "eni-01bacf3fbf03ea44d",
+        "OwnerId": "364604277807",
+        "PrivateIpAddress": "10.254.4.216",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateIpAddress": "10.254.4.216"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-053f6948dd29ce316",
+        "VpcId": "vpc-062d5f484661d1f99",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "WK-MGMT-BASTION-SG-1",
+        "GroupId": "sg-06b692c29f0d4da56"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "MGMT-BASTION-RHEL"
+      },
+      {
+        "Key": "Name",
+        "Value": "MGMT-BASTION-RHEL"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 4,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-05460055179ccfcb1",
+    "InstanceId": "i-01e15f191d05517e5",
+    "InstanceType": "t3.medium",
+    "LaunchTime": "2020-01-23T12:53:47+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "Platform": "windows",
+    "PrivateDnsName": "ip-172-31-19-181.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.31.19.181",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-3-133-80-169.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "3.133.80.169",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-b042fcca",
+    "VpcId": "vpc-5e742736",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2020-01-23T12:53:48+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-06858671ad92ef313"
+        }
+      }
+    ],
+    "ClientToken": "5015bf49-dcdf-5fc5-046b-56be330e7c16",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::364604277807:instance-profile/aws-elasticbeanstalk-ec2-role",
+      "Id": "AIPAILYDYW3U2ARFC3SUE"
+    },
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "364604277807",
+          "PublicDnsName": "ec2-3-133-80-169.us-east-2.compute.amazonaws.com",
+          "PublicIp": "3.133.80.169"
+        },
+        "Attachment": {
+          "AttachTime": "2020-01-23T12:53:47+00:00",
+          "AttachmentId": "eni-attach-0c03b29709ee0a5dc",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "awseb-e-sryvccikmp-stack-AWSEBSecurityGroup-1MYQKORQSY18",
+            "GroupId": "sg-0410abec86b94a33d"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:11:56:73:ed:02",
+        "NetworkInterfaceId": "eni-081697dcc69aca15e",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-31-19-181.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.19.181",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "364604277807",
+              "PublicDnsName": "ec2-3-133-80-169.us-east-2.compute.amazonaws.com",
+              "PublicIp": "3.133.80.169"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-19-181.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.19.181"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-b042fcca",
+        "VpcId": "vpc-5e742736",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "awseb-e-sryvccikmp-stack-AWSEBSecurityGroup-1MYQKORQSY18",
+        "GroupId": "sg-0410abec86b94a33d"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "awseb-e-sryvccikmp-stack"
+      },
+      {
+        "Key": "aws:autoscaling:groupName",
+        "Value": "awseb-e-sryvccikmp-stack-AWSEBAutoScalingGroup-YSFHC3PFQR5G"
+      },
+      {
+        "Key": "elasticbeanstalk:environment-name",
+        "Value": "Mind1-env"
+      },
+      {
+        "Key": "Name",
+        "Value": "Mind1-env"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "AWSEBAutoScalingGroup"
+      },
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-2:364604277807:stack/awseb-e-sryvccikmp-stack/4200a000-3ddf-11ea-8f9d-026789fff09e"
+      },
+      {
+        "Key": "elasticbeanstalk:environment-id",
+        "Value": "e-sryvccikmp"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 2
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-0e7589a8422e3270f",
+    "InstanceId": "i-0e78070d480f4af23",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-0-41.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.0.41",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-3-18-9-71.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "3.18.9.71",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:42:43 GMT)",
+    "SubnetId": "subnet-0c03763dc495f0db9",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-12T10:44:04+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-013df6d0a99db0d93"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "364604277807",
+          "PublicDnsName": "ec2-3-18-9-71.us-east-2.compute.amazonaws.com",
+          "PublicIp": "3.18.9.71"
+        },
+        "Attachment": {
+          "AttachTime": "2019-03-12T10:44:03+00:00",
+          "AttachmentId": "eni-attach-0b40d37f4cb08589b",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:ee:f3:2f:88:c4",
+        "NetworkInterfaceId": "eni-0f10e4b49fcfb0e5a",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-0-41.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.0.41",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "364604277807",
+              "PublicDnsName": "ec2-3-18-9-71.us-east-2.compute.amazonaws.com",
+              "PublicIp": "3.18.9.71"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-0-41.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.0.41"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0c03763dc495f0db9",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "TEST-SQUID-LNX-01"
+      },
+      {
+        "Key": "Name",
+        "Value": "TEST-SQUID-LNX-01"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-015fe7c969aa126ca",
+    "InstanceId": "i-0effabf27d0eef3c4",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-1-184.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.1.184",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:43:56 GMT)",
+    "SubnetId": "subnet-08cabc9a68ef97364",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-13T09:05:52+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0d63b34967c64f336"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-13T09:05:52+00:00",
+          "AttachmentId": "eni-attach-05e41e9f985e641f3",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:6f:55:26:3a:30",
+        "NetworkInterfaceId": "eni-081c33e50021e3e90",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-1-184.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.1.184",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-1-184.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.1.184"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-08cabc9a68ef97364",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "TEST-DB-LNX-01"
+      },
+      {
+        "Key": "WK",
+        "Value": "TEST-DB-LNX-01"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-03291866",
+    "InstanceId": "i-03463d8e52ed5776c",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-10-254-1-33.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.1.33",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:41:39 GMT)",
+    "SubnetId": "subnet-0ac17022e9d636d05",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T13:42:00+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0a68cb6cb164ad0a8"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T13:41:59+00:00",
+          "AttachmentId": "eni-attach-0ffc22ceb06e9ec82",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:cf:f0:a6:59:0e",
+        "NetworkInterfaceId": "eni-0e9c5543d90800708",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-1-33.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.1.33",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-1-33.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.1.33"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0ac17022e9d636d05",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "WK",
+        "Value": "TEST-APP-LNX-01"
+      },
+      {
+        "Key": "Name",
+        "Value": "TEST-APP-LNX-01"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-08b4a0f6e106c1dba",
+    "InstanceId": "i-0cd2199a4e9a6438c",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "Platform": "windows",
+    "PrivateDnsName": "ip-10-254-0-132.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.0.132",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:36:46 GMT)",
+    "SubnetId": "subnet-0b0561f1e47f60d3c",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T13:32:24+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-06fa5ea46a67d22f3"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T13:32:23+00:00",
+          "AttachmentId": "eni-attach-02635e78822e05ec6",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:ff:c0:80:dd:e6",
+        "NetworkInterfaceId": "eni-046abf6bd90dd225f",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-0-132.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.0.132",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-0-132.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.0.132"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0b0561f1e47f60d3c",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "TEST-WEB-WIN-01"
+      },
+      {
+        "Key": "WK",
+        "Value": "TEST-WEB-WIN-01"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-08b4a0f6e106c1dba",
+    "InstanceId": "i-01fd00eda5ed136bb",
+    "InstanceType": "t2.micro",
+    "KeyName": "WKTEST",
+    "LaunchTime": "2020-01-07T17:58:42+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "Platform": "windows",
+    "PrivateDnsName": "ip-10-254-1-49.us-east-2.compute.internal",
+    "PrivateIpAddress": "10.254.1.49",
+    "ProductCodes": [],
+    "PublicDnsName": "",
+    "State": {
+      "Code": 80,
+      "Name": "stopped"
+    },
+    "StateTransitionReason": "User initiated (2020-10-20 12:39:48 GMT)",
+    "SubnetId": "subnet-0ac17022e9d636d05",
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "AttachTime": "2019-03-06T13:39:39+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0c44b71d34fa0b3e9"
+        }
+      }
+    ],
+    "ClientToken": "",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2019-03-06T13:39:39+00:00",
+          "AttachmentId": "eni-attach-01af60d1baaa92697",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "Primary network interface",
+        "Groups": [
+          {
+            "GroupName": "TESTSG-WK",
+            "GroupId": "sg-01304c37490351325"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:3d:8c:f0:b2:4e",
+        "NetworkInterfaceId": "eni-09f82f1745f248f79",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-10-254-1-49.us-east-2.compute.internal",
+        "PrivateIpAddress": "10.254.1.49",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-10-254-1-49.us-east-2.compute.internal",
+            "PrivateIpAddress": "10.254.1.49"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0ac17022e9d636d05",
+        "VpcId": "vpc-0667a9c0957fb6e23",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/sda1",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "TESTSG-WK",
+        "GroupId": "sg-01304c37490351325"
+      }
+    ],
+    "SourceDestCheck": true,
+    "StateReason": {
+      "Code": "Client.UserInitiatedShutdown",
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+    },
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "TEST-APP-WIN-01"
+      },
+      {
+        "Key": "WK",
+        "Value": "TEST-APP-WIN-01"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-08e42b8293869c6ce",
+    "InstanceId": "i-0bf3ad353b08291ee",
+    "InstanceType": "t2.micro",
+    "KeyName": "kubernetes.kopsistio.in-7a:70:86:34:84:f4:88:d6:1b:61:d3:fe:f3:51:cb:91",
+    "LaunchTime": "2020-05-03T08:02:01+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-172-20-39-80.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.20.39.80",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-3-135-185-154.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "3.135.185.154",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-085836b135142499e",
+    "VpcId": "vpc-008fabb1b23b1822d",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "2020-05-03T08:02:02+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-050267afc7b75df33"
+        }
+      }
+    ],
+    "ClientToken": "3aa5c766-399b-c4e2-d54c-7f1c83a71bae",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::364604277807:instance-profile/nodes.kopsistio.in",
+      "Id": "AIPAVJZA3YQXXYB6H25AD"
+    },
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "amazon",
+          "PublicDnsName": "ec2-3-135-185-154.us-east-2.compute.amazonaws.com",
+          "PublicIp": "3.135.185.154"
+        },
+        "Attachment": {
+          "AttachTime": "2020-05-03T08:02:01+00:00",
+          "AttachmentId": "eni-attach-08dab5aa2be8fd544",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "nodes.kopsistio.in",
+            "GroupId": "sg-0ce856204616fc02a"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:1a:3a:64:ad:2a",
+        "NetworkInterfaceId": "eni-096d4f6eb79babedc",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-20-39-80.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.20.39.80",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "amazon",
+              "PublicDnsName": "ec2-3-135-185-154.us-east-2.compute.amazonaws.com",
+              "PublicIp": "3.135.185.154"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-20-39-80.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.20.39.80"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-085836b135142499e",
+        "VpcId": "vpc-008fabb1b23b1822d",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "nodes.kopsistio.in",
+        "GroupId": "sg-0ce856204616fc02a"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "kops.k8s.io/instancegroup",
+        "Value": "nodes"
+      },
+      {
+        "Key": "Name",
+        "Value": "nodes.kopsistio.in"
+      },
+      {
+        "Key": "aws:autoscaling:groupName",
+        "Value": "nodes.kopsistio.in"
+      },
+      {
+        "Key": "k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup",
+        "Value": "nodes"
+      },
+      {
+        "Key": "KubernetesCluster",
+        "Value": "kopsistio.in"
+      },
+      {
+        "Key": "k8s.io/role/node",
+        "Value": "1"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  },
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-044cba456c7d6a2fe",
+    "InstanceId": "i-015a3c06bdc0df4d3",
+    "InstanceType": "t3.micro",
+    "KeyName": "rjsysdig",
+    "LaunchTime": "2020-08-11T11:48:24+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-2b",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-172-31-16-121.us-east-2.compute.internal",
+    "PrivateIpAddress": "172.31.16.121",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-3-128-18-132.us-east-2.compute.amazonaws.com",
+    "PublicIpAddress": "3.128.18.132",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-b042fcca",
+    "VpcId": "vpc-5e742736",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "2020-08-11T11:48:25+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-0a6f7811c4524a7a6"
+        }
+      }
+    ],
+    "ClientToken": "b225cf75-665d-edcc-42e2-76b26228d6e0",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::364604277807:instance-profile/eks-34b9eeac-7372-18fb-79d9-5b47292c3c07",
+      "Id": "AIPAVJZA3YQX5F52JRAQP"
+    },
+    "NetworkInterfaces": [
+      {
+        "Attachment": {
+          "AttachTime": "2020-08-11T11:49:26+00:00",
+          "AttachmentId": "eni-attach-0ccd5efe37f83f97f",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 1,
+          "Status": "attached"
+        },
+        "Description": "aws-K8S-i-015a3c06bdc0df4d3",
+        "Groups": [
+          {
+            "GroupName": "eks-cluster-sg-testekssysdig-689905936",
+            "GroupId": "sg-0807f93fa9142a72e"
+          },
+          {
+            "GroupName": "eks-remoteAccess-34b9eeac-7372-18fb-79d9-5b47292c3c07",
+            "GroupId": "sg-0f9099a6e3ff58104"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:44:a6:0a:f5:08",
+        "NetworkInterfaceId": "eni-090ed8b2f04db6825",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-31-27-146.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.27.146",
+        "PrivateIpAddresses": [
+          {
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-27-146.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.27.146"
+          },
+          {
+            "Primary": false,
+            "PrivateDnsName": "ip-172-31-19-49.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.19.49"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-b042fcca",
+        "VpcId": "vpc-5e742736",
+        "InterfaceType": "interface"
+      },
+      {
+        "Association": {
+          "IpOwnerId": "amazon",
+          "PublicDnsName": "ec2-3-128-18-132.us-east-2.compute.amazonaws.com",
+          "PublicIp": "3.128.18.132"
+        },
+        "Attachment": {
+          "AttachTime": "2020-08-11T11:48:24+00:00",
+          "AttachmentId": "eni-attach-085e7b20d0b6944ee",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached"
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "eks-cluster-sg-testekssysdig-689905936",
+            "GroupId": "sg-0807f93fa9142a72e"
+          },
+          {
+            "GroupName": "eks-remoteAccess-34b9eeac-7372-18fb-79d9-5b47292c3c07",
+            "GroupId": "sg-0f9099a6e3ff58104"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "06:d4:c2:47:02:30",
+        "NetworkInterfaceId": "eni-0d25f00de2cdb5664",
+        "OwnerId": "364604277807",
+        "PrivateDnsName": "ip-172-31-16-121.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.16.121",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "amazon",
+              "PublicDnsName": "ec2-3-128-18-132.us-east-2.compute.amazonaws.com",
+              "PublicIp": "3.128.18.132"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-16-121.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.16.121"
+          },
+          {
+            "Primary": false,
+            "PrivateDnsName": "ip-172-31-25-22.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.25.22"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-b042fcca",
+        "VpcId": "vpc-5e742736",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "eks-cluster-sg-testekssysdig-689905936",
+        "GroupId": "sg-0807f93fa9142a72e"
+      },
+      {
+        "GroupName": "eks-remoteAccess-34b9eeac-7372-18fb-79d9-5b47292c3c07",
+        "GroupId": "sg-0f9099a6e3ff58104"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "eks:cluster-name",
+        "Value": "testekssysdig"
+      },
+      {
+        "Key": "aws:ec2launchtemplate:id",
+        "Value": "lt-0b8eb997f3a5925c8"
+      },
+      {
+        "Key": "aws:ec2launchtemplate:version",
+        "Value": "1"
+      },
+      {
+        "Key": "k8s.io/cluster-autoscaler/enabled",
+        "Value": "true"
+      },
+      {
+        "Key": "kubernetes.io/cluster/testekssysdig",
+        "Value": "owned"
+      },
+      {
+        "Key": "aws:autoscaling:groupName",
+        "Value": "eks-34b9eeac-7372-18fb-79d9-5b47292c3c07"
+      },
+      {
+        "Key": "k8s.io/cluster-autoscaler/testekssysdig",
+        "Value": "owned"
+      },
+      {
+        "Key": "Name",
+        "Value": "eksnodesysdig1"
+      },
+      {
+        "Key": "eks:nodegroup-name",
+        "Value": "sysdignode1"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 2
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 2,
+      "HttpEndpoint": "enabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    }
+  }
+]

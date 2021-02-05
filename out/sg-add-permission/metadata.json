@@ -1,0 +1,96 @@
+{
+  "policy": {
+    "name": "sg-add-permission",
+    "resource": "security-group",
+    "description": "Filter any security group that\nallows 0.0.0.0/0 or ::/0 (IPv6) ingress on port 22, remove\nthe rule\n",
+    "mode": {
+      "type": "cloudtrail",
+      "role": "arn:aws:iam::364604277807:role/Custodian-Policy",
+      "events": [
+        {
+          "source": "ec2.amazonaws.com",
+          "event": "AuthorizeSecurityGroupIngress",
+          "ids": "requestParameters.groupId"
+        },
+        {
+          "source": "ec2.amazonaws.com",
+          "event": "RevokeSecurityGroupIngress",
+          "ids": "requestParameters.groupId"
+        }
+      ],
+      "tags": {
+        "custodian-info": "mode=cloudtrail:version=0.9.10"
+      }
+    },
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "ingress",
+            "Ports": [
+              22
+            ],
+            "Cidr": "0.0.0.0/0"
+          },
+          {
+            "type": "ingress",
+            "Ports": [
+              22
+            ],
+            "CidrV6": "::/0"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "0.9.10",
+  "execution": {
+    "id": "6bc0710a-67fa-4d9b-bc83-4cd84bba782f",
+    "start": 1612506728.4276662,
+    "end_time": 1612506729.2174432,
+    "duration": 0.7897770404815674
+  },
+  "config": {
+    "region": "us-east-2",
+    "regions": [
+      "us-east-2"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "364604277807",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "custodian_polices.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "lambda.GetFunction": 1,
+    "lambda.CreateFunction": 1,
+    "events.DescribeRule": 1,
+    "events.PutRule": 1,
+    "lambda.AddPermission": 1,
+    "events.ListTargetsByRule": 1,
+    "events.PutTargets": 1
+  },
+  "metrics": []
+}

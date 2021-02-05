@@ -1,0 +1,77 @@
+{
+  "policy": {
+    "name": "ec2-tag-compliance-mark",
+    "resource": "ec2",
+    "description": "Find all non-compliant tag instances to stop in 1 day.\n",
+    "mode": {
+      "type": "config-rule",
+      "role": "arn:aws:iam::364604277807:role/Custodian-Policy",
+      "tags": {
+        "custodian-info": "mode=config-rule:version=0.9.10"
+      }
+    },
+    "filters": [
+      {
+        "tag:Custodian-Testing": "present"
+      },
+      {
+        "tag: maid_status": "absent"
+      }
+    ],
+    "actions": [
+      {
+        "type": "mark-for-op",
+        "op": "stop",
+        "days": 1
+      }
+    ]
+  },
+  "version": "0.9.10",
+  "execution": {
+    "id": "1d23b50c-503b-47a2-9d15-661638f656e6",
+    "start": 1612506729.222266,
+    "end_time": 1612506730.0439804,
+    "duration": 0.8217144012451172
+  },
+  "config": {
+    "region": "us-east-2",
+    "regions": [
+      "us-east-2"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "364604277807",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "custodian_polices.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "lambda.GetFunction": 1,
+    "lambda.CreateFunction": 1,
+    "config.DescribeConfigRules": 1,
+    "lambda.AddPermission": 1,
+    "config.PutConfigRule": 1
+  },
+  "metrics": []
+}

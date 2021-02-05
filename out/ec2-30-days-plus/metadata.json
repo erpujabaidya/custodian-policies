@@ -1,0 +1,74 @@
+{
+  "policy": {
+    "name": "ec2-30-days-plus",
+    "resource": "ec2",
+    "filters": [
+      {
+        "type": "instance-age",
+        "op": "ge",
+        "days": 30
+      }
+    ]
+  },
+  "version": "0.9.10",
+  "execution": {
+    "id": "472cedd5-4c11-4aab-8913-22d822115519",
+    "start": 1612507498.3060412,
+    "end_time": 1612507498.3321347,
+    "duration": 0.026093482971191406
+  },
+  "config": {
+    "region": "us-east-2",
+    "regions": [
+      "us-east-2"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "364604277807",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "old-instances.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2021-02-05T06:44:58.323601",
+      "Value": 26,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2021-02-05T06:44:58.323619",
+      "Value": 0.001983642578125,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2021-02-05T06:44:58.332118",
+      "Value": 4.5299530029296875e-06,
+      "Unit": "Seconds"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+2021-02-05 06:30:05,101 - custodian.policy - INFO - policy:ec2-invalid-ami resource:ec2 region:us-east-2 count:0 time:0.40
+2021-02-05 06:32:07,577 - custodian.policy - INFO - Provisioning policy lambda: ec2-invalid-ami region: us-east-2
+2021-02-05 06:32:07,742 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-ec2-invalid-ami

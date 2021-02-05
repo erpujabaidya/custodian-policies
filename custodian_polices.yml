@@ -1,0 +1,62 @@
+policies:
+- name: ec2-invalid-ami
+  resource: ec2
+  description: |
+    Find all running EC2 instances that are using invalid AMIs and stop them
+  mode:
+    type: periodic
+    schedule: rate(1 day)
+    role: arn:aws:iam::364604277807:role/Custodian-Policy
+  filters:
+    - "State.Name": running
+    - type: value
+      key: ImageId
+      op: in
+      value:
+          - ami-02bcbb802e03574ba
+#   actions:
+#     - stop
+
+- name: sg-add-permission
+  resource: security-group
+  description: |
+    Filter any security group that
+    allows 0.0.0.0/0 or ::/0 (IPv6) ingress on port 22, remove
+    the rule
+  mode:
+    type: cloudtrail
+    role: arn:aws:iam::364604277807:role/Custodian-Policy
+    events:
+      - source: ec2.amazonaws.com
+        event: AuthorizeSecurityGroupIngress
+        ids: "requestParameters.groupId"
+      - source: ec2.amazonaws.com
+        event: RevokeSecurityGroupIngress
+        ids: "requestParameters.groupId"
+  filters:
+    - or:
+      - type: ingress
+        Ports: [22]
+        Cidr: "0.0.0.0/0"
+      - type: ingress
+        Ports: [22]
+        CidrV6: "::/0"
+#   actions:
+#     - type: set-permissions
+#       # remove the permission matched by a previous ingress filter.
+#       remove-ingress: matched
+
+- name: ec2-tag-compliance-mark
+  resource: ec2
+  description: | 
+    Find all non-compliant tag instances to stop in 1 day.
+  mode:
+    type: config-rule
+    role: arn:aws:iam::364604277807:role/Custodian-Policy
+  filters:
+    - "tag:Custodian-Testing": present
+    - "tag: maid_status": absent
+  actions:
+    - type: mark-for-op
+      op: stop
+      days: 1

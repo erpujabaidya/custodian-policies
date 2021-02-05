@@ -1,0 +1,1263 @@
+[
+  {
+    "Description": "launch-wizard-6 created 2020-08-26T17:26:48.343+05:30",
+    "GroupName": "launch-wizard-6",
+    "IpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-07d4502f1fdf15327",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-5e742736",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "Security group for nodes",
+    "GroupName": "nodes.kopsistio.in",
+    "IpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": [
+          {
+            "GroupId": "sg-01246f642f431661f",
+            "UserId": "364604277807"
+          },
+          {
+            "GroupId": "sg-0ce856204616fc02a",
+            "UserId": "364604277807"
+          }
+        ]
+      },
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-0ce856204616fc02a",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "KubernetesCluster",
+        "Value": "kopsistio.in"
+      },
+      {
+        "Key": "kubernetes.io/cluster/kopsistio.in",
+        "Value": "owned"
+      },
+      {
+        "Key": "Name",
+        "Value": "nodes.kopsistio.in"
+      }
+    ],
+    "VpcId": "vpc-008fabb1b23b1822d",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "launch-wizard-1 created 2019-03-06T19:00:29.377+05:30",
+    "GroupName": "TESTSG-WK",
+    "IpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "10.0.0.0/8"
+          },
+          {
+            "CidrIp": "184.106.50.48/28",
+            "Description": "Match-APP"
+          },
+          {
+            "CidrIp": "50.57.3.210/31",
+            "Description": "MWATCH-KAFKA"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "SSH"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 139,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "10.0.0.0/8",
+            "Description": "SAMBA"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 139,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 8085,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "SQUID"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 8085,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 3389,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "RDP"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 3389,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 445,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "10.0.0.0/8",
+            "Description": "SAMBA"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 445,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-01304c37490351325",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "All-WK-TEST"
+      }
+    ],
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "SSH"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "IBM_QRadar_SIEM",
+    "GroupName": "IBM_QRadar_SIEM",
+    "IpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 443,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 443,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-06e4091ed22c3d91a",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-5e742736",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "launch-wizard-3 created 2019-09-06T13:14:45.209+05:30",
+    "GroupName": "launch-wizard-3",
+    "IpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-0c3405d24305a33ce",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-5e742736",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "MGMT WEB",
+    "GroupName": "MGMT-WEB",
+    "IpPermissions": [
+      {
+        "FromPort": 161,
+        "IpProtocol": "udp",
+        "IpRanges": [
+          {
+            "CidrIp": "10.0.0.0/8"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 161,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 3389,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 3389,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 445,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "10.0.0.0/8"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 445,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-02dfe9361a67bc36f",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "default VPC security group",
+    "GroupName": "default",
+    "IpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": [
+          {
+            "GroupId": "sg-923bbdf8",
+            "UserId": "364604277807"
+          }
+        ]
+      },
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "SSH"
+          }
+        ],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "SSH"
+          }
+        ],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 3389,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "RDP"
+          }
+        ],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "RDP"
+          }
+        ],
+        "PrefixListIds": [],
+        "ToPort": 3389,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-923bbdf8",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-5e742736",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "SSH"
+          }
+        ],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "launch-wizard-5 created 2020-01-23T19:58:31.309+05:30",
+    "GroupName": "launch-wizard-5",
+    "IpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-0cf841bb127ff4553",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "launch-wizard-1 created 2019-03-05T18:54:28.513+05:30",
+    "GroupName": "WK-MGMT-MWATCH-SG-1",
+    "IpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0"
+          }
+        ],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-08d37110f6f2a8c4f",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-062d5f484661d1f99",
+    "MatchedIpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0"
+          }
+        ],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "launch-wizard-7 created 2020-08-27T10:43:57.882+05:30",
+    "GroupName": "launch-wizard-7",
+    "IpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-05bb3fa8542601cd1",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-5e742736",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "launch-wizard-1 created 2019-03-06T15:05:11.686+05:30",
+    "GroupName": "WK-MGMT-BASTION-SG-1",
+    "IpPermissions": [
+      {
+        "FromPort": 80,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "VGARD 3"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 80,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 0,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "10.0.0.0/8",
+            "Description": "VGARD1"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 65535,
+        "UserIdGroupPairs": []
+      },
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "10.0.0.0/8",
+            "Description": "VGARD"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 2144,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "10.0.0.0/8"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 2144,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 3389,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 3389,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 443,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "VGARD 2"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 443,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-06b692c29f0d4da56",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-062d5f484661d1f99",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "launch-wizard-2 created 2019-04-04T15:34:55.418+05:30",
+    "GroupName": "launch-wizard-2",
+    "IpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 3389,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 3389,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-0eae4faed30438e3b",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-5e742736",
+    "MatchedIpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "default VPC security group",
+    "GroupName": "default",
+    "IpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": [
+          {
+            "GroupId": "sg-0d478441ea9c35a81",
+            "UserId": "364604277807"
+          }
+        ]
+      },
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "SSH"
+          }
+        ],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "SSH"
+          }
+        ],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 3389,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "RDP"
+          }
+        ],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "RDP"
+          }
+        ],
+        "PrefixListIds": [],
+        "ToPort": 3389,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-0d478441ea9c35a81",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-0667a9c0957fb6e23",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "SSH"
+          }
+        ],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "Security group for all nodes in the nodeGroup to allow SSH access",
+    "GroupName": "eks-remoteAccess-34b9eeac-7372-18fb-79d9-5b47292c3c07",
+    "IpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-0f9099a6e3ff58104",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "eks:nodegroup-name",
+        "Value": "sysdignode1"
+      },
+      {
+        "Key": "eks",
+        "Value": "sysdignode1"
+      }
+    ],
+    "VpcId": "vpc-5e742736",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "Security group for masters",
+    "GroupName": "masters.kopsistio.in",
+    "IpPermissions": [
+      {
+        "FromPort": 4003,
+        "IpProtocol": "tcp",
+        "IpRanges": [],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 65535,
+        "UserIdGroupPairs": [
+          {
+            "GroupId": "sg-0ce856204616fc02a",
+            "UserId": "364604277807"
+          }
+        ]
+      },
+      {
+        "FromPort": 2382,
+        "IpProtocol": "tcp",
+        "IpRanges": [],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 4000,
+        "UserIdGroupPairs": [
+          {
+            "GroupId": "sg-0ce856204616fc02a",
+            "UserId": "364604277807"
+          }
+        ]
+      },
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 1,
+        "IpProtocol": "udp",
+        "IpRanges": [],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 65535,
+        "UserIdGroupPairs": [
+          {
+            "GroupId": "sg-0ce856204616fc02a",
+            "UserId": "364604277807"
+          }
+        ]
+      },
+      {
+        "FromPort": 1,
+        "IpProtocol": "tcp",
+        "IpRanges": [],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 2379,
+        "UserIdGroupPairs": [
+          {
+            "GroupId": "sg-0ce856204616fc02a",
+            "UserId": "364604277807"
+          }
+        ]
+      },
+      {
+        "FromPort": 443,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 443,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-01246f642f431661f",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "masters.kopsistio.in"
+      },
+      {
+        "Key": "kubernetes.io/cluster/kopsistio.in",
+        "Value": "owned"
+      },
+      {
+        "Key": "KubernetesCluster",
+        "Value": "kopsistio.in"
+      }
+    ],
+    "VpcId": "vpc-008fabb1b23b1822d",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  },
+  {
+    "Description": "default VPC security group",
+    "GroupName": "default",
+    "IpPermissions": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": [
+          {
+            "GroupId": "sg-08afdd70988f00065",
+            "UserId": "364604277807"
+          }
+        ]
+      },
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "SSH"
+          }
+        ],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "SSH"
+          }
+        ],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      },
+      {
+        "FromPort": 3389,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "RDP"
+          }
+        ],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "RDP"
+          }
+        ],
+        "PrefixListIds": [],
+        "ToPort": 3389,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "364604277807",
+    "GroupId": "sg-08afdd70988f00065",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-062d5f484661d1f99",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0",
+            "Description": "SSH"
+          }
+        ],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  }
+]
