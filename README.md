@@ -20,15 +20,22 @@ Cloud Custodian can be bound to serverless event streams across multiple cloud p
 
 Cloud Custodian policies are expressed in YAML and include the following:
 
-The type of resource to run the policy against
+1.The type of resource to run the policy against
 
-Filters to narrow down the set of resources
+2.Filters to narrow down the set of resources
 
-Actions to take on the filtered set of resources
+3.Actions to take on the filtered set of resources
 
 Here AWS Cloud custodian package is installed
 or, visit https://aws.amazon.com/blogs/opensource/compliance-as-code-and-auto-remediation-with-cloud-custodian/
-
+Install Custodian in the aws cloud9 environment
+1. python3 -m venv custodian
+2. source custodian/bin/activate
+3.  pip install c7n   # Install AWS package
+4. custodian validate <yml_file> # We must validate Cloud Custodian policies against the JSON schema before processing
+5. custodian run --dryrun <yml_file> -s out # Performming a dry-run command before running the command on infrastructure is usually preferred.
+6. custodian run <yml_file> -s out # we use the report subcommand to summarize 
+7. custodian report <yml_file> -s out --format grid # Everything looks as expected, so now we are going to run the policies:
 
 Here i have run some use cases for cloud custodian
 Use Cases:
@@ -38,19 +45,19 @@ Use Cases:
 
 3.Find all non-compliant tag instances to stop in 1 day (check custodian_polices.yml)
 
-4.Cloud Service Limit (check  cloudservicelimit.yml & servicelimitt.yml)
+4.Cloud Service Limit (check cloudservicelimit.yml & servicelimit.yml)
 
-5.Find all the instances (check old-instances.yml)
+5.Find all the old instances (check old-instances.yml)
 
-6.
+6. Recommend Use - AWS Organizations , check if config is enabled or not (check aws-organization-check-config.yml)
 
-7.
+7.Check MFA root aacess (check checkmfaroot.yml)
 
-8.
+8.Cloud trail logging disabled (check cloudtrailloggingdisabled.yml)
 
-9.
+9.Cloud trail for s3 access enabled (check cloudtrailloggingdisabled.yml )
 
-10.
+10.Cloud trail logging enabled (check cloudtrailenabled.yml)
 
 11.
 
@@ -71,3 +78,13 @@ Use Cases:
 19.
 
 20.
+
+21.
+
+22.
+
+23.
+
+24.
+
+25.
