@@ -21,3 +21,4 @@ policies:
     type: cloudtrail
   name: low-utilization-amazon-ec2-instances
   resource: ec2
+  # issue - this file need to be checked
