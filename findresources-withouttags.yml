@@ -1,0 +1,24 @@
+policies:
+  - name: s3-tag-policy
+    resource: aws.s3
+    filters:
+      - or:
+        - "tag:Project": absent
+        - "tag:Environment": absent
+        - "tag:Provisioner": absent
+
+  - name: ec2-tag-policy
+    resource: aws.ec2
+    filters:
+      - or:
+        - "tag:Project": absent
+        - "tag:Environment": absent
+        - "tag:Provisioner": absent
+
+  - name: rds-tag-policy
+    resource: aws.rds
+    filters:
+      - or:
+        - "tag:Project": absent
+        - "tag:Environment": absent
+        - "tag:Provisioner": absent

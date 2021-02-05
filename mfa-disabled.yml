@@ -1,15 +1,15 @@
 policies:
-  - name: user-missing-mfa
-    resource: iam-user
-    region: us-east-2
-    filters:
-      - type: credential
-        key: password_enabled
-      - type: mfa-device
-        value: empty
-    actions:
-      - <<: *notify_action
-        subject: "Enable MFA on your AWS user"
+- name: user-missing-mfa
+  resource: iam-user
+  region: us-east-2
+  filters:
+    - type: credential
+      key: password_enabled
+    - type: mfa-device
+      value: empty
+  actions:
+    - <<: *notify_action
+      subject: "Enable MFA on your AWS user"
 
 
-        # here there is a problem with yml scripting
+        # here there is a problem with yml scripting - space problem

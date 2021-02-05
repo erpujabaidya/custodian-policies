@@ -1,0 +1,54 @@
+[
+  {
+    "Path": "/",
+    "UserName": "jakaulla",
+    "UserId": "AIDAI7HAY4ZZ2YGNRIP5M",
+    "Arn": "arn:aws:iam::364604277807:user/jakaulla",
+    "CreateDate": "2018-09-03T07:03:33+00:00",
+    "PasswordLastUsed": "2020-01-14T07:02:12+00:00",
+    "c7n:AccessKeys": [
+      {
+        "UserName": "jakaulla",
+        "AccessKeyId": "AKIAJCN33LX24XMFZD6A",
+        "Status": "Inactive",
+        "CreateDate": "2018-09-03T07:03:34+00:00",
+        "c7n:match-type": "access"
+      }
+    ],
+    "c7n:matched-keys": [
+      {
+        "UserName": "jakaulla",
+        "AccessKeyId": "AKIAJCN33LX24XMFZD6A",
+        "Status": "Inactive",
+        "CreateDate": "2018-09-03T07:03:34+00:00",
+        "c7n:match-type": "access"
+      }
+    ]
+  },
+  {
+    "Path": "/",
+    "UserName": "pmathad",
+    "UserId": "AIDAVJZA3YQXVP2QV7TZH",
+    "Arn": "arn:aws:iam::364604277807:user/pmathad",
+    "CreateDate": "2019-05-20T07:36:03+00:00",
+    "PasswordLastUsed": "2021-02-04T18:25:37+00:00",
+    "c7n:AccessKeys": [
+      {
+        "UserName": "pmathad",
+        "AccessKeyId": "AKIAVJZA3YQX4UB22DWE",
+        "Status": "Inactive",
+        "CreateDate": "2020-06-26T09:14:57+00:00",
+        "c7n:match-type": "access"
+      }
+    ],
+    "c7n:matched-keys": [
+      {
+        "UserName": "pmathad",
+        "AccessKeyId": "AKIAVJZA3YQX4UB22DWE",
+        "Status": "Inactive",
+        "CreateDate": "2020-06-26T09:14:57+00:00",
+        "c7n:match-type": "access"
+      }
+    ]
+  }
+]

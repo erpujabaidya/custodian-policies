@@ -1,0 +1,11 @@
+policies:
+- name: delete-old-snapshots
+  resource: ebs-snapshot
+  description: |
+    Deletes a snapshot if its older than 10 days
+  filters:
+   - type: age
+     days: 10
+     op: ge
+  actions:
+   - delete

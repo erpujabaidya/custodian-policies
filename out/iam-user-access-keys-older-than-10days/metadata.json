@@ -1,0 +1,80 @@
+{
+  "policy": {
+    "name": "iam-user-access-keys-older-than-10days",
+    "description": "Retrieve all IAM users whom have inactive access keys that are older than 10days\n",
+    "resource": "iam-user",
+    "filters": [
+      {
+        "type": "access-key",
+        "key": "Status",
+        "value": "Inactive"
+      },
+      {
+        "type": "access-key",
+        "key": "CreateDate",
+        "value": 10,
+        "op": "greater-than",
+        "value_type": "age"
+      }
+    ]
+  },
+  "version": "0.9.10",
+  "execution": {
+    "id": "f98396ea-33f1-40d2-bcb1-632c7cc7ea70",
+    "start": 1612531561.5856504,
+    "end_time": 1612531563.95374,
+    "duration": 2.368089437484741
+  },
+  "config": {
+    "region": "us-east-2",
+    "regions": [
+      "us-east-2"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "364604277807",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": true,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "iam-inactivity.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListUsers": 1,
+    "iam.GetUser": 29,
+    "iam.ListAccessKeys": 29
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2021-02-05T13:26:03.951708",
+      "Value": 2,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2021-02-05T13:26:03.951728",
+      "Value": 2.3505990505218506,
+      "Unit": "Seconds"
+    }
+  ]
+}

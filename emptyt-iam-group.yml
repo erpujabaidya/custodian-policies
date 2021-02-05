@@ -1,0 +1,8 @@
+policies:
+- name: empty-iam-group
+  resource: iam-group
+  descripion: |
+    IAM users does not exist in groups      
+  filters:
+    - type: has-users
+      value: False

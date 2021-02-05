@@ -1,0 +1,20 @@
+[
+  {
+    "KeyPairId": "key-0c358d1f2a3192ead",
+    "KeyFingerprint": "f5:7b:45:26:d6:27:b2:f5:e4:23:5f:f5:a0:3f:02:d1:93:34:41:5c",
+    "KeyName": "fabric",
+    "Tags": []
+  },
+  {
+    "KeyPairId": "key-089375d8e53bb56ba",
+    "KeyFingerprint": "4e:c6:35:5d:ef:b4:e6:ec:28:ad:12:44:92:76:af:09:18:30:ea:5c",
+    "KeyName": "MFATEST",
+    "Tags": []
+  },
+  {
+    "KeyPairId": "key-0b28b4a97bda1045a",
+    "KeyFingerprint": "9d:e6:a5:34:d0:48:3a:20:2e:9b:c7:eb:1b:4e:9f:09:22:25:3d:ba",
+    "KeyName": "WK_DEMO",
+    "Tags": []
+  }
+]

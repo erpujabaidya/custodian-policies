@@ -1,0 +1,1 @@
+2021-02-05 13:49:32,131 - custodian.policy - INFO - policy:used-key-pairs resource:aws.key-pair region:us-east-2 count:7 time:0.00

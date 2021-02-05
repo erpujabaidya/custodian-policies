@@ -1,0 +1,19 @@
+policies:
+  - name: ec2-tag-compliance
+    resource: ec2
+    comment: |
+      Delete instance that dont have basic tags immediately
+    filters:
+      - or:
+          - "tag:Owner": absent
+          - "tag:Product": absent
+          - "tag:Team": absent
+          - "tag:Environment": absent
+          - "tag:Service": absent
+    mode:
+      type: cloudtrail
+      role: arn:aws:iam::364604277807:role/Custodian-Policy
+      events:
+        - RunInstances
+    actions:
+      - stop

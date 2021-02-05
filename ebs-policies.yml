@@ -1,0 +1,50 @@
+policies:
+- name: ebs-mark-unattached-deletion
+  resource: ebs
+  description: |
+    Mark any unattached EBS volumes for deletion in 60 days.
+    This will clean up old unused orphaned volumes that customers forget to delete.
+  filters:
+    - "tag:maid_status": absent
+    - State: available
+  actions:
+    - type: mark-for-op
+      op: delete
+      days: 60
+
+
+- name: ebs-unmark-attached-deletion
+  resource: ebs
+  description: |
+    Unmark any attached EBS volumes that were scheduled for deletion
+    if they are currently attached to an instance
+  filters:
+    - State: in-use
+    - "tag:maid_status": not-null
+  actions:
+    - unmark
+
+
+
+- name: ebs-delete-marked
+  resource: ebs
+  description: |
+    Delete any unattached EBS volumes that were scheduled for deletion 60 days prior and notify
+  filters:
+    - type: marked-for-op
+      op: delete
+  actions:
+    - delete
+    - type: notify
+      template: default.html
+      priority_header: 2
+      subject: "EBS - Unattached Volumes Deleted - [custodian {{ account }} - {{ region }}]" 
+      violation_desc: "EBS Volumes Which Have Been Unattached For 60 Days:"
+      action_desc: "Actions Taken:  EBS Volumes Deleted"
+      to:
+        - Puja.Baidya@mindtree.com
+      transport:
+        type: sqs
+        queue: https://sqs.us-east-2.amazonaws.com/364604277807/Custodian_SQS
+        region: us-east-2
+

@@ -1,0 +1,14 @@
+policies:
+  - name: iam-user-access-keys-older-than-10days
+    description: |
+      Retrieve all IAM users whom have inactive access keys that are older than 10days
+    resource: iam-user
+    filters:
+      - type: access-key
+        key: Status
+        value: Inactive
+      - type: access-key
+        key: CreateDate
+        value: 10
+        op: greater-than
+        value_type: age

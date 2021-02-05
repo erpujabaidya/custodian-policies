@@ -1,0 +1,24 @@
+policies:
+- name: root-mfa-check
+  resource: account
+  comments: |
+     Verifies if MFA is enabled for root user and notifies if not
+  filters:
+      - type: iam-summary
+        key: AccountMFAEnabled
+        value: false
+        op: eq
+        value_type: swap
+  actions:
+      - type: notify
+        template: default.html
+        priority_header: 2
+        subject: Cloud Custodian - Root MFA Not enabled
+        violation_desc: "The Following Account Is Missing a MFA On Root User:"
+        action_desc: "Actions Taken:  Notify Only"
+        to:
+          - Puja.baidya@mindtree.com
+        transport:
+          type: sqs
+          queue: https://sqs.us-east-2.amazonaws.com/364604277807/Custodian_SQS
+          region: us-east-2

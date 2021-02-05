@@ -1,0 +1,14 @@
+policies: 
+- name: rds-db-instance-snapshot-weekly
+  mode:
+    type: periodic
+    schedule: "rate(7 days)"
+  resource: rds
+  description: |
+    Creates a Weekly Cron Scheduled CWEvent to
+    Snapshot single non-cluster RDS Instances weekly if tagged
+    with key: Backup with value: WEEKLY
+  filters:
+    - "tag:Backup": WEEKLY
+  actions:
+    - snapshot

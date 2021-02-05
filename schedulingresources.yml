@@ -1,0 +1,14 @@
+policies:
+  - name: offhours-stop
+    resource: ec2
+    filters:
+       - type: offhour
+    actions:
+      - stop
+
+  - name: offhours-start
+    resource: ec2
+    filters:
+      - type: onhour
+    actions:
+      - start

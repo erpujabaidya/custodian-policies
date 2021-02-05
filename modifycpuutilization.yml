@@ -1,0 +1,23 @@
+#space problem in yml file
+policies:
+- actions:
+  - type: tag
+    tag: utilization
+    value: low
+  filters:
+  - type: metrics
+    name: CPUUtilization
+    days: 1
+    value: 10
+    op: less-than
+  - or
+    - type: metrics
+      name: CPUUtilization
+      days: 1
+      value: 10
+      op: less-than
+  mode:
+    events: [RunInstances]
+    type: cloudtrail
+  name: low-utilization-amazon-ec2-instances
+  resource: ec2

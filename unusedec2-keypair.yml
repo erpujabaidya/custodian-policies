@@ -1,0 +1,12 @@
+
+
+policies:
+  - name: unused-key-pairs
+    resource: aws.key-pair
+    filters:
+      - unused
+  - name: used-key-pairs
+    resource: aws.key-pair
+    filters:
+      - type: unused
+        state: false

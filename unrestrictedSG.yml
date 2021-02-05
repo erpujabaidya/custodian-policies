@@ -1,0 +1,22 @@
+#error in policy
+policies:
+  - name: security-group-open-to-world
+    resource: security-group
+    comment: |
+      Open to world outside of HTTP, HTTPS, and ICMP
+    filters:
+      - used
+      - type: ingress
+        Cidr: {
+          value: '0.0.0.0',
+          op: in,
+          value_type: 'cidr'
+        }
+      - name: ec2-with-open-sgs
+        resource: ec2
+        comment: |
+          If a EC2 instance currently exists with a public IP attached and has an open security group
+        filters:
+          - type: value
+            key: "PublicIpAddress"
+            value: not-null

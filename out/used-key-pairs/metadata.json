@@ -1,0 +1,67 @@
+{
+  "policy": {
+    "name": "used-key-pairs",
+    "resource": "aws.key-pair",
+    "filters": [
+      {
+        "type": "unused",
+        "state": false
+      }
+    ]
+  },
+  "version": "0.9.10",
+  "execution": {
+    "id": "7c628ab9-496d-4386-b196-c52a411d75ca",
+    "start": 1612532972.1291351,
+    "end_time": 1612532972.1325595,
+    "duration": 0.003424406051635742
+  },
+  "config": {
+    "region": "us-east-2",
+    "regions": [
+      "us-east-2"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "364604277807",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": true,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "unusedec2-keypair.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2021-02-05T13:49:32.132331",
+      "Value": 7,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2021-02-05T13:49:32.132347",
+      "Value": 0.002402067184448242,
+      "Unit": "Seconds"
+    }
+  ]
+}

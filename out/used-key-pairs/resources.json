@@ -1,0 +1,44 @@
+[
+  {
+    "KeyPairId": "key-0ef3ff8cd3a1a9c7e",
+    "KeyFingerprint": "f3:d0:47:b9:80:6f:be:99:47:6d:8c:e5:8d:94:6a:c0:9c:45:bf:7c",
+    "KeyName": "corentcontainer",
+    "Tags": []
+  },
+  {
+    "KeyPairId": "key-01ceeb34049ce207f",
+    "KeyFingerprint": "3e:bf:db:48:e9:2b:12:86:e2:02:9c:b6:43:c0:78:27",
+    "KeyName": "kubernetes.kopsistio.in-7a:70:86:34:84:f4:88:d6:1b:61:d3:fe:f3:51:cb:91",
+    "Tags": []
+  },
+  {
+    "KeyPairId": "key-070e24bdb20fbe7a7",
+    "KeyFingerprint": "00:d6:e7:d6:5f:2d:5f:9b:35:54:c1:0b:6f:e0:4e:f3:88:29:6f:ed",
+    "KeyName": "nlp",
+    "Tags": []
+  },
+  {
+    "KeyPairId": "key-0d22c45720f805c71",
+    "KeyFingerprint": "6d:00:bd:26:17:d2:f5:23:c7:08:f1:3e:12:88:7b:6f:ec:50:1b:63",
+    "KeyName": "rjsysdig",
+    "Tags": []
+  },
+  {
+    "KeyPairId": "key-0cd657cd5bbe3395c",
+    "KeyFingerprint": "69:91:03:58:03:a7:c7:0c:e0:7f:68:92:d8:03:2a:b1:44:c7:14:f0",
+    "KeyName": "rjwindows",
+    "Tags": []
+  },
+  {
+    "KeyPairId": "key-0dedfc5bb61222f42",
+    "KeyFingerprint": "69:5e:cf:30:21:12:32:98:1b:28:79:6c:b4:9c:b0:91:76:1e:82:44",
+    "KeyName": "terraformmgmt",
+    "Tags": []
+  },
+  {
+    "KeyPairId": "key-0dc4e6ac49ad14da6",
+    "KeyFingerprint": "1c:6d:cc:dd:54:51:84:53:85:d6:36:85:20:58:bb:cf:e1:b5:f9:f5",
+    "KeyName": "WKTEST",
+    "Tags": []
+  }
+]

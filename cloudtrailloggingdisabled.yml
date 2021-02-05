@@ -1,0 +1,14 @@
+policies:
+- name: aws-cloudtrail-not-enabled
+  resource: account
+  region: us-east-2
+  tags:
+    - level:high
+  description: |
+    Policy scans for accounts which do not have
+    CloudTrails enabled.
+  filters:
+    - type: check-config
+      all-resources: true
+      global-resources: true
+      running: true
